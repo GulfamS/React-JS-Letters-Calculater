@@ -1,0 +1,93 @@
+.container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+  padding-top: 60;
+  padding-bottom: 80px;
+  padding-right: 200px;
+  padding-left: 150px;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.image {
+  height: 350px;
+  width: 400px;
+  order: 0;
+}
+
+.letters-container {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .image {
+    height: 480px;
+    width: 560px;
+    order: 1;
+  }
+  .letters-container {
+    order: 0;
+    margin-left: 20px;
+  }
+}
+
+.heading {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 28px;
+}
+
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+.input-heading {
+  margin-bottom: 6px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .input-heading {
+    font-size: 15px;
+  }
+}
+
+.input {
+  border: 1px solid #e4e7eb;
+  background-color: #1d976c;
+  border-radius: 5px;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: Roboto;
+  color: #219a6f;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 15px;
+}
